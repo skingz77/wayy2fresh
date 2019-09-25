@@ -140,5 +140,7 @@ html {
       margin-top: 10px; }
     #contact-us #insta {
       margin-left: 30px; }
-    #contact-us a:visited {
-      color: #e4e3e3; } }
+    #contact-us a {
+      color: #e4e3e3; }
+      #contact-us a:visited {
+        color: #e4e3e3; } }
