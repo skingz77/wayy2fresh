@@ -1,0 +1,198 @@
+$white: #e4e3e3;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 9600px) {
+  span {
+    color: grey;
+  }
+  #main {
+    height: 100vh;
+    border: solid black 0.5px;
+    .logo {
+      display: flex;
+      color: white;
+      justify-content: center;
+      align-items: center;
+      height: 7%;
+      background: black;
+    }
+
+    .main-screen {
+      height: 93%;
+      background-image: url("../../images/background.jpeg");
+      background-size: cover;
+      background-position: center;
+
+      .overlay {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .centerpiece {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1 {
+          color: $white;
+          font-weight: 100;
+          font-size: 2.5rem;
+          // margin-bottom: 50px;
+        }
+        .button {
+          margin-top: 30px;
+          padding: 15px 0;
+
+          background: $white;
+          cursor: pointer;
+          font-size: 0.9em;
+          text-transform: uppercase;
+          border-radius: 5px;
+          display: inline-block;
+          vertical-align: middle;
+          line-height: 1em;
+          outline: none;
+          text-align: center;
+          text-decoration: none;
+          user-select: none;
+          width: 210px;
+          color: black;
+          transition: transform 0.2s;
+          width: 150px;
+          &:hover,
+          &:focus {
+            transform: scale(1.1);
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  #services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    padding-bottom: 25px;
+    h2 {
+      margin-bottom: 15px;
+      font-weight: 100;
+      font-size: 2em;
+    }
+
+    .container-services {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .box {
+        height: 80px;
+        width: 70%;
+        background-color: black;
+        margin-bottom: 10px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.2s;
+        &:hover {
+          transform: scale(1.1);
+          cursor: pointer;
+        }
+        h3,
+        h4 {
+          font-weight: 100;
+        }
+        h3 {
+          color: $white;
+          font-size: 1rem;
+        }
+
+        h4 {
+          color: $white;
+          margin-top: 5px;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  #contact-us {
+    // border: solid black 0.5px;
+    background: #000000; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #434343,
+      #000000
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #434343,
+      #000000
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $white;
+    padding: 25px 0;
+    h2 {
+      margin-top: 25px;
+      margin-bottom: 15px;
+      font-weight: 100;
+      font-size: 2em;
+    }
+
+    img {
+      width: 70%;
+      margin-bottom: 10px;
+    }
+
+    h4 {
+      font-weight: 100;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-weight: 100;
+      margin-bottom: 10px;
+      text-align: center;
+      font-size: 1.4rem;
+    }
+    ul {
+      list-style: none;
+      text-align: center;
+      li {
+        margin-bottom: 5px;
+      }
+    }
+    .icons {
+      font-size: 30px;
+      margin-top: 10px;
+    }
+
+    #insta {
+      margin-left: 30px;
+    }
+
+    a {
+      &:visited {
+        color: $white;
+      }
+    }
+  }
+}

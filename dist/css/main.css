@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif; }
+
+html {
+  scroll-behavior: smooth; }
+
+/* Mobile Styles */
+@media only screen and (max-width: 9600px) {
+  span {
+    color: grey; }
+  #main {
+    height: 100vh;
+    border: solid black 0.5px; }
+    #main .logo {
+      display: flex;
+      color: white;
+      justify-content: center;
+      align-items: center;
+      height: 7%;
+      background: black; }
+    #main .main-screen {
+      height: 93%;
+      background-image: url("../../images/background.jpeg");
+      background-size: cover;
+      background-position: center; }
+      #main .main-screen .overlay {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+      #main .main-screen .centerpiece {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        #main .main-screen .centerpiece h1 {
+          color: #e4e3e3;
+          font-weight: 100;
+          font-size: 2.5rem; }
+        #main .main-screen .centerpiece .button {
+          margin-top: 30px;
+          padding: 15px 0;
+          background: #e4e3e3;
+          cursor: pointer;
+          font-size: 0.9em;
+          text-transform: uppercase;
+          border-radius: 5px;
+          display: inline-block;
+          vertical-align: middle;
+          line-height: 1em;
+          outline: none;
+          text-align: center;
+          text-decoration: none;
+          user-select: none;
+          width: 210px;
+          color: black;
+          transition: transform 0.2s;
+          width: 150px; }
+          #main .main-screen .centerpiece .button:hover, #main .main-screen .centerpiece .button:focus {
+            transform: scale(1.1);
+            text-decoration: none; }
+  #services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    padding-bottom: 25px; }
+    #services h2 {
+      margin-bottom: 15px;
+      font-weight: 100;
+      font-size: 2em; }
+    #services .container-services {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      #services .container-services .box {
+        height: 80px;
+        width: 70%;
+        background-color: black;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.2s; }
+        #services .container-services .box:hover {
+          transform: scale(1.1);
+          cursor: pointer; }
+        #services .container-services .box h3,
+        #services .container-services .box h4 {
+          font-weight: 100; }
+        #services .container-services .box h3 {
+          color: #e4e3e3;
+          font-size: 1rem; }
+        #services .container-services .box h4 {
+          color: #e4e3e3;
+          margin-top: 5px;
+          font-size: 0.8rem; }
+  #contact-us {
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #e4e3e3;
+    padding: 25px 0; }
+    #contact-us h2 {
+      margin-top: 25px;
+      margin-bottom: 15px;
+      font-weight: 100;
+      font-size: 2em; }
+    #contact-us img {
+      width: 70%;
+      margin-bottom: 10px; }
+    #contact-us h4 {
+      font-weight: 100;
+      margin-bottom: 30px; }
+    #contact-us h3 {
+      font-weight: 100;
+      margin-bottom: 10px;
+      text-align: center;
+      font-size: 1.4rem; }
+    #contact-us ul {
+      list-style: none;
+      text-align: center; }
+      #contact-us ul li {
+        margin-bottom: 5px; }
+    #contact-us .icons {
+      font-size: 30px;
+      margin-top: 10px; }
+    #contact-us #insta {
+      margin-left: 30px; }
+    #contact-us a:visited {
+      color: #e4e3e3; } }
