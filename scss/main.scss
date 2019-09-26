@@ -84,9 +84,24 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 25px;
-    padding-bottom: 25px;
+
+    background-image: url("../images/self-pic.jpeg");
+    background-size: cover;
+    background-position: center;
+
+    .overlay {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255,255,255,.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
     h2 {
+
       margin-bottom: 15px;
       font-weight: 100;
       font-size: 2em;
