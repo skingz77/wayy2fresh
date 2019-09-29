@@ -14,6 +14,12 @@ html {
   span {
     color: grey;
   }
+
+  .hr--small {
+    border-width: 1px 0 0 0;
+    width: 50px;
+    margin-bottom: 20px;
+  }
   #main {
     height: 100vh;
     border: solid black 0.5px;
@@ -35,7 +41,7 @@ html {
       .overlay {
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.6);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -48,8 +54,14 @@ html {
         h1 {
           color: $white;
           font-weight: 100;
-          font-size: 2.5rem;
-          // margin-bottom: 50px;
+          font-size: 3rem;
+          margin-bottom: 15px;
+        }
+
+        h2 {
+          color: $white;
+          font-weight: 100;
+          font-size: 1rem;
         }
         .button {
           margin-top: 30px;
@@ -80,6 +92,43 @@ html {
       }
     }
   }
+
+  #about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .overlay {
+      width: 100%;
+      height: 100%;
+      // background: #00416A;  /* fallback for old browsers */
+      // background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
+      // background: linear-gradient(to right, #E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      
+
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      font-weight: 100;
+      font-size: 2em;
+    }
+    img {
+      width: 70%;
+      margin-bottom: 30px;
+    }
+
+    p {
+      width: 70%;
+    }
+  }
   #services {
     display: flex;
     flex-direction: column;
@@ -101,7 +150,6 @@ html {
       padding-bottom: 25px;
     }
     h2 {
-
       margin-bottom: 15px;
       font-weight: 100;
       font-size: 2em;
@@ -171,7 +219,9 @@ html {
       font-weight: 100;
       font-size: 2em;
     }
-
+    .cont {
+      color: $white;
+    }
     img {
       width: 70%;
       margin-bottom: 10px;
