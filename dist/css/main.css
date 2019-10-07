@@ -25,6 +25,8 @@ html {
       align-items: center;
       height: 7%;
       background: black; }
+      #main .logo img {
+        height: 80%; }
     #main .main-screen {
       height: 93%;
       background-image: url("../images/background.png");
